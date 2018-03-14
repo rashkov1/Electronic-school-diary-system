@@ -1,0 +1,58 @@
+ //$result1=mysqli_query($con,"SELECT * FROM denovi WHERE aktivna=1 ");
+ //$vrednost=mysqli_fetch_array($result1);
+ //$tip=$vrednost['id'];
+ mysqli_query($con,"CREATE VIEW nedelabr AS SELECT * FROM denovi WHERE id='$tip' ");
+ echo "<tr><th>Den</th>
+       <th>"$mydata['CourseTitle']+"</th> 
+	   <th>CAS 2</th>
+	   <th>CAS 3</th>
+	   <th>CAS 4</th>
+	   <th>CAS 5</th>
+	   <th>CAS 6</th>
+ <th>CAS 7</th></tr>";
+  if(isset($_POST['p']))
+ {
+	 $tip--;
+	 if($tip==0) { $tip=1; }
+	 mysqli_query($con,"UPDATE nedelabr SET aktivna=1 WHERE $tip=id");
+	 $ponedelnik=mysqli_query($con,"SELECT * FROM ponedelnik WHERE id='$tip'");
+	 $vtornik=mysqli_query($con,"SELECT * FROM vtornik WHERE id='$tip'");
+	 $sreda=mysqli_query($con,"SELECT * FROM sreda WHERE id='$tip'");
+	 $cetvrtok=mysqli_query($con,"SELECT * FROM cetvrtok WHERE id='$tip'");
+	 $petok=mysqli_query($con,"SELECT * FROM petok WHERE id='$tip'");
+	 
+ }
+ if(isset($_POST['s']))
+ {
+	 $tip++;
+	 if($tip==5) { $tip=$tip-1; }
+	 mysqli_query($con,"UPDATE denovi SET aktivna=1 WHERE $tip=id");
+	 $ponedelnik=mysqli_query($con,"SELECT * FROM ponedelnik WHERE id='$tip'");
+	 $vtornik=mysqli_query($con,"SELECT * FROM vtornik WHERE id='$tip'");
+	 $sreda=mysqli_query($con,"SELECT * FROM sreda WHERE id='$tip'");
+	 $cetvrtok=mysqli_query($con,"SELECT * FROM cetvrtok WHERE id='$tip'");
+	 $petok=mysqli_query($con,"SELECT * FROM petok WHERE id='$tip'");
+	 
+ }
+ 
+ 
+ 
+ 
+ " ".$row['prezime']." ".$row['datum_ragjanje']." ".$row['mesto'] .
+ 
+ 
+ 
+ //Pecatenje na uspehot na site ucenici
+ 
+ 
+ SELECT ime,prezime,makedonski,matematika,angliski,biznis,gragjansko,fizicko,programiranje,digitalnisistemi,procesno,praksa,prosek FROM podatoci, oceni WHERE podatoci.id_user= oceni.id_user
+ 
+ //Pecatenje na povedenieto na ucenicite
+ 
+ 
+ SELECT ime,prezime,opravdani,neopravdani,vkupno,povedenie FROM podatoci,povedenie WHERE podatoci.id_user=povedenie.id_user
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,85 @@
+date/time         : 2015-04-22, 23:23:38, 411ms
+computer name     : AMC-PC
+user name         : SYSTEM <admin>
+registered owner  : Microsoft / Microsoft
+operating system  : Windows XP Media Center x64 Service Pack 3 build 2600
+system language   : Macedonian (FYROM)
+system up time    : 3 hours 27 minutes
+program up time   : 1 second
+processors        : 4x Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz
+physical memory   : 2366/6051 MB (free/total)
+free disk space   : (C:) 24,77 GB
+display mode      : 1024x768, 32 bit
+process id        : $4820
+allocated memory  : 15,90 MB
+command line      : C:\wamp\sendmail\sendmail.exe -t -i -oi -f"ileraskov123@gmail.com" -t
+executable        : sendmail.exe
+exec. date/time   : 2011-06-18 02:10
+compiled with     : Delphi 2006/07
+madExcept version : 3.0l
+callstack crc     : $ab1c3cf3, $d1165a8a, $d1165a8a
+exception number  : 1
+exception class   : EIdOSSLUnderlyingCryptoError
+exception message : Error connecting with SSL. Error connecting with SSL. error:1408F10B:SSL routines:SSL3_GET_RECORD:wrong version number.
+
+main thread ($4cc0):
+0045f17c +00a0 sendmail.exe IdSSLOpenSSLHeaders           16425   +8 EIdOpenSSLAPICryptoError.RaiseExceptionCode
+0045f0d2 +0012 sendmail.exe IdSSLOpenSSLHeaders           16409   +1 EIdOpenSSLAPICryptoError.RaiseException
+0045f30a +0122 sendmail.exe IdSSLOpenSSLHeaders           16468  +26 EIdOpenSSLAPISSLError.RaiseExceptionCode
+0045f1d9 +0021 sendmail.exe IdSSLOpenSSLHeaders           16433   +1 EIdOpenSSLAPISSLError.RaiseException
+00466686 +012a sendmail.exe IdSSLOpenSSL                   2668  +17 TIdSSLSocket.Connect
+00465a1c +00dc sendmail.exe IdSSLOpenSSL                   2262  +21 TIdSSLIOHandlerSocketOpenSSL.OpenEncodedConnection
+004655f6 +0062 sendmail.exe IdSSLOpenSSL                   2106   +9 TIdSSLIOHandlerSocketOpenSSL.StartSSL
+00465587 +006b sendmail.exe IdSSLOpenSSL                   2093  +15 TIdSSLIOHandlerSocketOpenSSL.ConnectClient
+00444a9f +0063 sendmail.exe IdIOHandlerSocket               335  +13 TIdIOHandlerSocket.Open
+00465637 +0007 sendmail.exe IdSSLOpenSSL                   2122   +1 TIdSSLIOHandlerSocketOpenSSL.Open
+0044157d +0235 sendmail.exe IdTCPClient                     318  +53 TIdTCPClientCustom.Connect
+00445cc8 +00a4 sendmail.exe IdExplicitTLSClientServerBase   257  +23 TIdExplicitTLSClient.Connect
+0045ab7b +0017 sendmail.exe IdSMTP                          373   +2 TIdSMTP.Connect
+004b5f14 +1060 sendmail.exe sendmail                        808 +326 initialization
+77723675 +0010 kernel32.dll                                          BaseThreadInitThunk
+
+thread $480c:
+77c51edf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77723675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $4818:
+77c500f6 +0e ntdll.dll     NtWaitForMultipleObjects
+77723675 +10 kernel32.dll  BaseThreadInitThunk
+
+stack dump:
+0018fa60  81 f1 45 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..E.............
+0018fa70  74 fa 18 00 81 f1 45 00 - 70 ca fe 00 0b f1 08 14  t.....E.p.......
+0018fa80  64 e7 45 00 a0 da fd 00 - f8 fb 18 00 90 fa 18 00  d.E.............
+0018fa90  0c fc 18 00 c8 4b 40 00 - f8 fb 18 00 68 1e 00 01  .....K@.....h...
+0018faa0  a0 da fd 00 64 e7 45 00 - dd f5 41 00 24 ac ff 00  ....d.E...A.$...
+0018fab0  49 4a 46 00 00 00 00 00 - 6e 01 00 00 20 ac ff 00  IJF.....n.......
+0018fac0  0c 5c 0c 11 0c 16 00 11 - 0a 00 00 00 01 00 00 00  .\..............
+0018fad0  0c 5c 0c 11 6e 01 00 00 - 38 fb 18 00 c0 4c 00 00  .\..n...8....L..
+0018fae0  ff ff ff ff 00 00 00 00 - d6 97 04 11 48 5d 10 11  ............H]..
+0018faf0  ff ff ff ff 01 00 00 00 - 0c 5c 0c 11 6e 01 00 00  .........\..n...
+0018fb00  f0 18 9a 02 a2 98 04 11 - 38 fb 18 00 06 00 00 00  ........8.......
+0018fb10  01 00 00 00 0c 5c 0c 11 - 8a 01 00 00 c0 e5 03 00  .....\..........
+0018fb20  50 fb 18 00 05 00 00 00 - 01 00 00 00 0c 5c 0c 11  P............\..
+0018fb30  88 01 00 00 ff ff ff ff - 00 00 00 00 40 9f 04 11  ............@...
+0018fb40  50 fb 18 00 30 2a 9a 02 - ff ff ff 65 72 72 6f 72  P...0*.....error
+0018fb50  3a 31 34 30 38 46 31 30 - 42 3a 53 53 4c 20 72 6f  :1408F10B:SSL.ro
+0018fb60  75 74 69 6e 65 73 3a 53 - 53 4c 33 5f 47 45 54 5f  utines:SSL3_GET_
+0018fb70  52 45 43 4f 52 44 3a 77 - 72 6f 6e 67 20 76 65 72  RECORD:wrong.ver
+0018fb80  73 69 6f 6e 20 6e 75 6d - 62 65 72 00 85 ce 9a 02  sion.number.....
+0018fb90  0c 2e 9a 02 30 2a 9a 02 - 2d ef 00 12 98 17 9b 02  ....0*..-.......
+
+disassembling:
+[...]
+0045f171         mov     eax, esi
+0045f173         call    dword ptr [eax]
+0045f175         mov     edx, eax
+0045f177 16424   mov     [edx+$c], ebx
+0045f17a 16425   mov     eax, edx
+0045f17c       > call    -$5a495 ($404cec)      ; System.@RaiseExcept
+0045f181 16426   xor     eax, eax
+0045f183         pop     edx
+0045f184         pop     ecx
+0045f185         pop     ecx
+0045f186         mov     fs:[eax], edx
+[...]
